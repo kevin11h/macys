@@ -69,6 +69,6 @@
     </script>
   </head>
   <body>
-    <div id="series_chart_div" style="width: 1400px; height: 500px;"></div>
+    <div id="series_chart_div" style="width: 1290px; height: 500px;"></div>
   </body>
 </html>
