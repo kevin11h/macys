@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawSeriesChart);
+
+    function drawSeriesChart() {
+      var data = google.visualization.arrayToDataTable([
+       ["ID","Popularity","Rank","Area","Appearances"],
+	["etsy.com",1,3.046875,"# appearances",64],
+	["davidsbridal.com",2,3.357142857142857,"# appearances",14],
+	["theplunge.com",3,3.769230769230769,"# appearances",13],
+	["realsimple.com",4,3.953125,"# appearances",64],
+	["theknot.com",5,3.9615384615384617,"# appearances",130],
+	["weddingpaperdivas.com",6,4.0,"# appearances",6],
+	["uncommongoods.com",7,4.113207547169812,"# appearances",53],
+	["thingsremembered.com",8,4.428571428571429,"# appearances",28],
+	["bhldn.com",9,4.5,"# appearances",10],
+	["No link found",10,4.571428571428571,"# appearances",49],
+	["myregistry.com",11,4.714285714285714,"# appearances",28],
+	["wikipedia.org",12,4.75,"# appearances",8],
+	["bridalguide.com",13,4.904761904761905,"# appearances",21],
+	["brides.com",14,4.943396226415095,"# appearances",53],
+	["target.com",15,4.948717948717949,"# appearances",39],
+	["lifehacker.com",16,5.133333333333334,"# appearances",15],
+	["nordstrom.com",17,5.285714285714286,"# appearances",7],
+	["bridebox.com",18,5.3,"# appearances",10],
+	["weddingideasmag.com",19,5.4,"# appearances",15],
+	["bedbathandbeyond.com",20,5.636363636363637,"# appearances",22],
+	["personalizationmall.com",21,5.638888888888889,"# appearances",36],
+	["findgift.com",22,5.666666666666667,"# appearances",6],
+	["honeyfund.com",23,5.714285714285714,"# appearances",7],
+	["goodhousekeeping.com",24,5.74468085106383,"# appearances",47],
+	["kohls.com",25,5.909090909090909,"# appearances",11],
+	["refinery29.com",26,6.0,"# appearances",10],
+	["amazon.com",27,6.105263157894737,"# appearances",19],
+	["walmart.com",28,6.153846153846154,"# appearances",26],
+	["pinterest.com",29,6.442622950819672,"# appearances",61],
+	["gifts.com",30,6.473684210526316,"# appearances",38],
+	["blueprintregistry.com",31,6.5,"# appearances",6],
+	["huffingtonpost.com",32,6.529411764705882,"# appearances",34],
+	["crateandbarrel.com",33,6.545454545454546,"# appearances",22],
+	["buzzfeed.com",34,6.6875,"# appearances",16],
+	["macys.com",35,6.909090909090909,"# appearances",11],
+	["simpleregistry.com",36,7.142857142857143,"# appearances",7],
+	["exclusivelyweddings.com",37,7.222222222222222,"# appearances",9],
+	["weddingbee.com",38,7.285714285714286,"# appearances",14],
+	["personalcreations.com",39,7.333333333333333,"# appearances",18],
+	["weddingwire.com",40,7.416666666666667,"# appearances",12],
+	["xojane.com",41,7.666666666666667,"# appearances",6],
+	["marthastewartweddings.com",42,7.9411764705882355,"# appearances",17],
+	["moneycrashers.com",43,8.166666666666666,"# appearances",6],
+	["potterybarn.com",44,8.25,"# appearances",8],
+	["popsugar.com",45,8.5,"# appearances",8]
+      ]);
+
+      var options = {
+        title: 'Search Result Mean Rankings for Wedding Keywords\n(Only 45 out of 246 unique Domains which Appear > 5 times)',
+        hAxis: {title: 'Popularity (order by increasing rank)', minValue: -1, maxValue: 46, gridlines: {count: 11}, ticks: ['', 5, 10, 15, 20, 25, 30, 35, 40, 45]},
+        vAxis: {title: 'Mean Rank Value', direction: -1, maxValue: 9.0, gridlines: {count: 10}, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]},
+        bubble: {textStyle: {fontSize: 11}},
+	legend: {position: 'in', alignment: 'end'}
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+  <body>
+    <div id="series_chart_div" style="width: 1400px; height: 500px;"></div>
+  </body>
+</html>
