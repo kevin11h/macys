@@ -1,0 +1,703 @@
+{
+  "nodes": [
+    {
+      "name": "and", 
+      "degree": 20
+    }, 
+    {
+      "name": "summer", 
+      "degree": 1
+    }, 
+    {
+      "name": "alternative / baby / bay\nbirthday / honeymoon / house\nhousewarming / kohl / my / myers", 
+      "degree": 10
+    }, 
+    {
+      "name": "dress / dresses\ninvitations / registries", 
+      "degree": 8
+    }, 
+    {
+      "name": "planning", 
+      "degree": 2
+    }, 
+    {
+      "name": "at", 
+      "degree": 1
+    }, 
+    {
+      "name": "home", 
+      "degree": 2
+    }, 
+    {
+      "name": "gift", 
+      "degree": 109
+    }, 
+    {
+      "name": "best", 
+      "degree": 19
+    }, 
+    {
+      "name": "from", 
+      "degree": 22
+    }, 
+    {
+      "name": "for", 
+      "degree": 58
+    }, 
+    {
+      "name": "brides", 
+      "degree": 1
+    }, 
+    {
+      "name": "father", 
+      "degree": 1
+    }, 
+    {
+      "name": "ideas", 
+      "degree": 53
+    }, 
+    {
+      "name": "to", 
+      "degree": 18
+    }, 
+    {
+      "name": "beach / diy / fall\noutdoor / personalised / personalized\nsmall / unique / unusual / winter", 
+      "degree": 10
+    }, 
+    {
+      "name": "online", 
+      "degree": 14
+    }, 
+    {
+      "name": "be", 
+      "degree": 2
+    }, 
+    {
+      "name": "360 / finder / items\nnz / search / uk / wording", 
+      "degree": 7
+    }, 
+    {
+      "name": "printable", 
+      "degree": 1
+    }, 
+    {
+      "name": "checklist", 
+      "degree": 6
+    }, 
+    {
+      "name": "gifts", 
+      "degree": 57
+    }, 
+    {
+      "name": "registry", 
+      "degree": 72
+    }, 
+    {
+      "name": "wedding", 
+      "degree": 149
+    }, 
+    {
+      "name": "man", 
+      "degree": 1
+    }, 
+    {
+      "name": "great", 
+      "degree": 6
+    }, 
+    {
+      "name": "tire", 
+      "degree": 2
+    }, 
+    {
+      "name": "places", 
+      "degree": 2
+    }, 
+    {
+      "name": "canadian", 
+      "degree": 1
+    }, 
+    {
+      "name": "of", 
+      "degree": 4
+    }, 
+    {
+      "name": "groom", 
+      "degree": 29
+    }, 
+    {
+      "name": "list", 
+      "degree": 2
+    }, 
+    {
+      "name": "cake / ceremony / flower / flowers\ninvitation / music / photo / present\npresents / reception / stationery / theme", 
+      "degree": 24
+    }, 
+    {
+      "name": "bride", 
+      "degree": 57
+    }, 
+    {
+      "name": "mother", 
+      "degree": 1
+    }, 
+    {
+      "name": "the", 
+      "degree": 12
+    }
+  ], 
+  "links": [
+    {
+      "sourceName": "groom", 
+      "source": 30, 
+      "targetName": "from", 
+      "target": 9, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "gift", 
+      "source": 7, 
+      "targetName": "for", 
+      "target": 10, 
+      "value": 6
+    }, 
+    {
+      "sourceName": "gifts", 
+      "source": 21, 
+      "targetName": "ideas", 
+      "target": 13, 
+      "value": 5
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "list", 
+      "target": 31, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "best", 
+      "target": 8, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "planning", 
+      "source": 4, 
+      "targetName": "checklist", 
+      "target": 20, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "to", 
+      "source": 14, 
+      "targetName": "groom", 
+      "target": 30, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "gift", 
+      "source": 7, 
+      "targetName": "registry", 
+      "target": 22, 
+      "value": 29
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "gifts", 
+      "target": 21, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "gifts", 
+      "target": 21, 
+      "value": 26
+    }, 
+    {
+      "sourceName": "great", 
+      "source": 25, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 4
+    }, 
+    {
+      "sourceName": "ideas", 
+      "source": 13, 
+      "targetName": "list", 
+      "target": 31, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "gifts", 
+      "source": 21, 
+      "targetName": "online", 
+      "target": 16, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "checklist", 
+      "target": 20, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "to", 
+      "source": 14, 
+      "targetName": "bride", 
+      "target": 33, 
+      "value": 6
+    }, 
+    {
+      "sourceName": "best", 
+      "source": 8, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "of", 
+      "source": 29, 
+      "targetName": "the", 
+      "target": 35, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "home", 
+      "source": 6, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "checklist", 
+      "target": 20, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "gifts", 
+      "target": 21, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "beach / diy / fall\noutdoor / personalised / personalized\nsmall / unique / unusual / winter", 
+      "source": 15, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 10
+    }, 
+    {
+      "sourceName": "gifts", 
+      "source": 21, 
+      "targetName": "for", 
+      "target": 10, 
+      "value": 14
+    }, 
+    {
+      "sourceName": "alternative / baby / bay\nbirthday / honeymoon / house\nhousewarming / kohl / my / myers", 
+      "source": 2, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 10
+    }, 
+    {
+      "sourceName": "canadian", 
+      "source": 28, 
+      "targetName": "tire", 
+      "target": 26, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "gift", 
+      "source": 7, 
+      "targetName": "from", 
+      "target": 9, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "cake / ceremony / flower / flowers\ninvitation / music / photo / present\npresents / reception / stationery / theme", 
+      "source": 32, 
+      "targetName": "ideas", 
+      "target": 13, 
+      "value": 12
+    }, 
+    {
+      "sourceName": "online", 
+      "source": 16, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 5
+    }, 
+    {
+      "sourceName": "and", 
+      "source": 0, 
+      "targetName": "groom", 
+      "target": 30, 
+      "value": 9
+    }, 
+    {
+      "sourceName": "groom", 
+      "source": 30, 
+      "targetName": "to", 
+      "target": 14, 
+      "value": 6
+    }, 
+    {
+      "sourceName": "the", 
+      "source": 35, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "father", 
+      "source": 12, 
+      "targetName": "of", 
+      "target": 29, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "from", 
+      "target": 9, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "great", 
+      "source": 25, 
+      "targetName": "gifts", 
+      "target": 21, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "gifts", 
+      "source": 21, 
+      "targetName": "from", 
+      "target": 9, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "from", 
+      "source": 9, 
+      "targetName": "bride", 
+      "target": 33, 
+      "value": 5
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "to", 
+      "target": 14, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "dress / dresses\ninvitations / registries", 
+      "source": 3, 
+      "targetName": "online", 
+      "target": 16, 
+      "value": 4
+    }, 
+    {
+      "sourceName": "places", 
+      "source": 27, 
+      "targetName": "for", 
+      "target": 10, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "ideas", 
+      "source": 13, 
+      "targetName": "from", 
+      "target": 9, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "and", 
+      "source": 0, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "online", 
+      "source": 16, 
+      "targetName": "registry", 
+      "target": 22, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "online", 
+      "target": 16, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "registry", 
+      "target": 22, 
+      "value": 16
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "cake / ceremony / flower / flowers\ninvitation / music / photo / present\npresents / reception / stationery / theme", 
+      "target": 32, 
+      "value": 12
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "checklist", 
+      "source": 20, 
+      "targetName": "printable", 
+      "target": 19, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "brides", 
+      "target": 11, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "at", 
+      "source": 5, 
+      "targetName": "home", 
+      "target": 6, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "the", 
+      "source": 35, 
+      "targetName": "best", 
+      "target": 8, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "and", 
+      "target": 0, 
+      "value": 9
+    }, 
+    {
+      "sourceName": "best", 
+      "source": 8, 
+      "targetName": "man", 
+      "target": 24, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 33
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "the", 
+      "target": 35, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "from", 
+      "source": 9, 
+      "targetName": "groom", 
+      "target": 30, 
+      "value": 6
+    }, 
+    {
+      "sourceName": "bride", 
+      "source": 33, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 2
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "ideas", 
+      "target": 13, 
+      "value": 4
+    }, 
+    {
+      "sourceName": "best", 
+      "source": 8, 
+      "targetName": "places", 
+      "target": 27, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "great", 
+      "source": 25, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "tire", 
+      "source": 26, 
+      "targetName": "gift", 
+      "target": 7, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "best", 
+      "source": 8, 
+      "targetName": "wedding", 
+      "target": 23, 
+      "value": 14
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "summer", 
+      "target": 1, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "gifts", 
+      "source": 21, 
+      "targetName": "registry", 
+      "target": 22, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "bride", 
+      "target": 33, 
+      "value": 18
+    }, 
+    {
+      "sourceName": "registry", 
+      "source": 22, 
+      "targetName": "360 / finder / items\nnz / search / uk / wording", 
+      "target": 18, 
+      "value": 7
+    }, 
+    {
+      "sourceName": "to", 
+      "source": 14, 
+      "targetName": "be", 
+      "target": 17, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "and", 
+      "target": 0, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "gift", 
+      "source": 7, 
+      "targetName": "ideas", 
+      "target": 13, 
+      "value": 14
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "planning", 
+      "target": 4, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "for", 
+      "source": 10, 
+      "targetName": "groom", 
+      "target": 30, 
+      "value": 3
+    }, 
+    {
+      "sourceName": "gift", 
+      "source": 7, 
+      "targetName": "online", 
+      "target": 16, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "ideas", 
+      "target": 13, 
+      "value": 8
+    }, 
+    {
+      "sourceName": "ideas", 
+      "source": 13, 
+      "targetName": "for", 
+      "target": 10, 
+      "value": 8
+    }, 
+    {
+      "sourceName": "mother", 
+      "source": 34, 
+      "targetName": "of", 
+      "target": 29, 
+      "value": 1
+    }, 
+    {
+      "sourceName": "wedding", 
+      "source": 23, 
+      "targetName": "dress / dresses\ninvitations / registries", 
+      "target": 3, 
+      "value": 4
+    }, 
+    {
+      "sourceName": "the", 
+      "source": 35, 
+      "targetName": "bride", 
+      "target": 33, 
+      "value": 5
+    }, 
+    {
+      "sourceName": "be", 
+      "source": 17, 
+      "targetName": "gifts", 
+      "target": 21, 
+      "value": 1
+    }
+  ]
+}
