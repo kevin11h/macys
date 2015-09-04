@@ -90,7 +90,7 @@
 	<link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/shortcode.css?673" type="text/css" media="screen, projection" /-->
 
 	<!--link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (min-width:240px) and (max-width:639px)" /-->
-	<link rel="stylesheet" href="tablet.css" type="text/css" media="screen and (min-width:640px) and (max-width:1023px)" />
+	<!-- <link rel="stylesheet" href="tablet.css" type="text/css" media="screen and (min-width:640px) and (max-width:1023px)" /> -->
 	<link rel="stylesheet" href="shortcode.css" type="text/css" media="screen, projection" />
 	
 	<!--script type="text/javascript" src="http://smthemes.com/demowp/wp-content/themes/wedding/js/superfish.js?ver=3.3.1"></script>
@@ -137,29 +137,6 @@
 					});
 				});
 	</script>
-	<script type="text/javascript" language="javascript">
-				jQuery(document).ready(function() {
-					jQuery('.search form').each(function() {
-						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
-					});
-					jQuery('.searchform form').each(function() {
-						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
-					});
-					jQuery('#commentform').each(function() {
-						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
-					});
-					// jQuery('a').live('mouseenter', function(e) {
-					// 	if ( jQuery(this).attr('href').indexOf('preview=1') < 0 ) {
-					// 		if ( jQuery(this).attr('href').indexOf('?') < 0 ) {
-					// 			jQuery(this).attr( 'href', jQuery(this).attr('href')+'?preview=1&template=wedding&stylesheet=wedding')
-					// 		} else {
-					// 			jQuery(this).attr( 'href', jQuery(this).attr('href')+'&preview=1&template=wedding&stylesheet=wedding')
-					// 		}
-					// 	}
-					// });
-					
-				});
-	</script>
 	<style type='text/css'>
 				.smthemes {
 					display:none;
@@ -187,29 +164,18 @@
 								</div>
 							</div>
 
-							<select class='mobile-menu' id='mobile-sec-menu'><option value='#'>Go to ...</option>		<script>
+							<!-- <select class='mobile-menu' id='mobile-sec-menu'><option value='#'>Go to ...</option>
+							<script>
 							jQuery(document).ready(function(){
 								jQuery('.menu-topmenu-container li').each(function() {
 									jQuery('<option />', {
 										'value':jQuery(this).find('a').attr('href'),
 										'text':jQuery(this).find('a').html()
-									}).appendTo(jQuery('#mobile-sec-menu'));
+									})//.appendTo(jQuery('#mobile-sec-menu'));
 								});
 							});
 							</script>
-							</select>
-							<select class='mobile-menu' id='mobile-main-menu'><option value='#'>Go to ...</option>
-								<script>
-								jQuery(document).ready(function(){
-									jQuery('.menu-primary li').each(function() {
-										jQuery('<option />', {
-											'value':jQuery(this).find('a').attr('href'),
-											'text':jQuery(this).find('a').html()
-										}).appendTo(jQuery('#mobile-main-menu'));
-									});
-								});
-								</script>
-							</select>
+							</select> -->
 
 						<div id='header-block'>
 
