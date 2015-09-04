@@ -1,0 +1,769 @@
+	
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	
+	<!--title>SMThemes Demo</title>	
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+
+	<meta name='robots' content='noindex,nofollow' />
+	<link rel="alternate" type="application/rss+xml" title="SMThemes Demo &raquo; Feed" href="http://smthemes.com/demowp/?feed=rss2" />
+	<link rel="alternate" type="application/rss+xml" title="SMThemes Demo &raquo; Comments Feed" href="http://smthemes.com/demowp/?feed=comments-rss2" /-->
+
+	<!--link rel='stylesheet' id='index-css'  href='http://smthemes.com/demowp/wp-content/themes/wedding/css/index.css?ver=3.3.1' type='text/css' media='all' /-->
+	<!--link rel='stylesheet' id='style-css'  href='http://smthemes.com/demowp/wp-content/themes/wedding/style.css?ver=3.3.1' type='text/css' media='all' /-->
+	<link rel='stylesheet' id='index-css' href='index.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='style-css' href='style.css' type='text/css' media='all' />
+	
+	<link rel='stylesheet' href='css/agency.css' type='text/css' />
+
+
+	 <!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+	
+	<!--script type='text/javascript' src='http://smthemes.com/demowp/wp-includes/js/jquery/jquery.js?ver=1.	7.1'></script-->
+	<!--script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&amp;ver=3'></script>
+	<script type="text/javascript" src="http://smthemes.com/demowp/wp-content/themes/wedding/js/dpagination.js"></script>
+	
+
+	<!--link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://smthemes.com/demowp/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://smthemes.com/demowp/wp-includes/wlwmanifest.xml" />
+	<link rel="shortcut icon" href="http://smthemes.com/demowp/wp-content/themes/wedding/images/favicon.png" type="image/x-icon" /-->
+
+
+	<!--link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/wide.css?4102" type="text/css" media="screen and (min-width:1024px)" /-->
+	<link rel="stylesheet" href="wide.css" type="text/css" media="screen and (min-width:1024px)" />
+
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/wide.css?9973" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/ie.css?1983" type="text/css" media="screen" />
+	<![endif]-->
+	<!--link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/mobile.css?7457" type="text/css" media="screen and (min-width:240px) and (max-width:639px)" />
+	<link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/tablet.css?4878" type="text/css" media="screen and (min-width:640px) and (max-width:1023px)" />
+	<link rel="stylesheet" href="http://smthemes.com/demowp/wp-content/themes/wedding/css/shortcode.css?673" type="text/css" media="screen, projection" /-->
+
+	<link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (min-width:240px) and (max-width:639px)" />
+	<link rel="stylesheet" href="tablet.css" type="text/css" media="screen and (min-width:640px) and (max-width:1023px)" />
+	<link rel="stylesheet" href="shortcode.css" type="text/css" media="screen, projection" />
+	
+	<!--script type="text/javascript" src="http://smthemes.com/demowp/wp-content/themes/wedding/js/superfish.js?ver=3.3.1"></script>
+	<script type="text/javascript" src="http://smthemes.com/demowp/wp-content/themes/wedding/js/smthemes.js?ver=1826"></script>
+	<script src="http://smthemes.com/demowp/wp-content/themes/wedding/js/jquery.cycle.all.js" type="text/javascript"></script-->
+
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./js/dpagination.js"></script>
+	<script type="text/javascript" src="./js/superfish.js"></script>
+	<script type="text/javascript" src="./js/smthemes.js"></script>
+	<script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script>
+
+				jQuery(document).ready(function() {
+
+					jQuery(document).ready(function() {
+						jQuery('.fp-slides').cycle({
+							fx: 'fade',
+							timeout: 3000,
+							delay: 0,
+							speed: 1000,
+							next: '.fp-next',
+							prev: '.fp-prev',
+							pager: '.fp-pager',
+							continuous: 0,
+							sync: 1,
+							pause: false,
+							pauseOnPagerHover: 0,
+							cleartype: true,
+							cleartypeNoBg: true
+						});
+					});
+					jQuery(".menus .children").addClass('sub-menu');
+					if ( jQuery(document).width() > 1023 ) jQuery(function(){ 
+						jQuery('ul.menus').superfish({ 
+							animation: {width:'show'},					
+							autoArrows:  true,
+							dropShadows: false, 
+							speed: 200,
+							delay: 1000                });
+					});
+					jQuery('textarea#comment').each(function(){
+							jQuery(this).attr('name','32238');
+					});
+				});
+	</script>
+	<script type="text/javascript" language="javascript">
+				jQuery(document).ready(function() {
+					jQuery('.search form').each(function() {
+						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
+					});
+					jQuery('.searchform form').each(function() {
+						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
+					});
+					jQuery('#commentform').each(function() {
+						jQuery(this).append("<input type='hidden' name='theme' value='wedding' />");
+					});
+					// jQuery('a').live('mouseenter', function(e) {
+					// 	if ( jQuery(this).attr('href').indexOf('preview=1') < 0 ) {
+					// 		if ( jQuery(this).attr('href').indexOf('?') < 0 ) {
+					// 			jQuery(this).attr( 'href', jQuery(this).attr('href')+'?preview=1&template=wedding&stylesheet=wedding')
+					// 		} else {
+					// 			jQuery(this).attr( 'href', jQuery(this).attr('href')+'&preview=1&template=wedding&stylesheet=wedding')
+					// 		}
+					// 	}
+					// });
+					
+				});
+	</script>
+	<style type='text/css'>
+				.smthemes {
+					display:none;
+				}
+	</style>
+</head>
+
+			<body class="home blog  content-r" layout='2'>
+
+				<div id='scrollUp'></div>
+
+				<div id='all'>
+					<div id='header'>
+
+						<div class='container clearfix'>
+
+							<div id='secondarymenu-container'>
+
+								<div id="logo">
+									<img src="./img/logo.png" class='logo' />
+								</div>
+
+								<div id='menu-box'>
+
+								</div>
+							</div>
+
+							<select class='mobile-menu' id='mobile-sec-menu'><option value='#'>Go to ...</option>		<script>
+							jQuery(document).ready(function(){
+								jQuery('.menu-topmenu-container li').each(function() {
+									jQuery('<option />', {
+										'value':jQuery(this).find('a').attr('href'),
+										'text':jQuery(this).find('a').html()
+									}).appendTo(jQuery('#mobile-sec-menu'));
+								});
+							});
+							</script>
+							</select>
+							<select class='mobile-menu' id='mobile-main-menu'><option value='#'>Go to ...</option>
+								<script>
+								jQuery(document).ready(function(){
+									jQuery('.menu-primary li').each(function() {
+										jQuery('<option />', {
+											'value':jQuery(this).find('a').attr('href'),
+											'text':jQuery(this).find('a').html()
+										}).appendTo(jQuery('#mobile-main-menu'));
+									});
+								});
+								</script>
+							</select>
+
+						<div id='header-block'>
+
+						<div id='mainmenu-container'>
+							<div id='mainmenu'>
+								<div class="menu-primary-container">
+									<ul class="menus menu-primary">
+										<li><a class='page-scroll' href="#Intro">Intro</a></li>
+										<li><a class='page-scroll' href="#Explore">Explore</a></li>
+										<li><a class='page-scroll' href="#Team">Team</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class='slider-container'>
+							<div class='slider-bgr'></div>
+							<div class="slider">
+								<div class="fp-slides">
+									<div class="fp-slides-items fp-first">
+										<div class="fp-thumbnail">
+											<a href="#KeyWordPhrases">
+												<img src="images/1.png" alt="Slide # 1" />
+											</a>
+										</div>
+										<div class="fp-content-wrap">
+											<div class="fp-content-fon"></div>
+											<div class="fp-content">
+												<h3 class="fp-title"><a href="#KeyWordPhrases">Slide # 1</a></h3>
+												<p>As mentioned in the data gathering section, there are 142 phrases used to acquire the search results, but they only have 74 unique words...
+													<b><a class="fp-more" href="#KeyWordPhrases">Read More</a></b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="fp-slides-items">
+										<div class="fp-thumbnail">
+											<a href="#Descriptions"><img src="images/2.png" alt="Slide # 2" /></a>
+										</div>
+										<div class="fp-content-wrap">
+											<div class="fp-content-fon"></div>
+											<div class="fp-content">
+												<h3 class="fp-title"><a href="#Descriptions">Slide # 2</a></h3>
+												<p>A wordcloud for text data is complimentary, and we made...
+													<b><a class="fp-more" href="#Descriptions">Read More</a></b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="fp-slides-items">
+										<div class="fp-thumbnail">
+											<a href="#bar">
+												<img src="images/3.png" alt="Slide # 3" />
+											</a>
+										</div>
+										<div class="fp-content-wrap">
+											<div class="fp-content-fon"></div>
+											<div class="fp-content">
+												<h3 class="fp-title"><a href="#bar">Slide # 3</a></h3>
+												<p>Which words though? An intriguing question that leads to a grouped bar plot comparing the frequency of 15 common words among the 10 ranks...
+													<b><a class="fp-more" href="#bar">Read More</a></b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="fp-slides-items">
+										<div class="fp-thumbnail">
+											<a href="#Similarity"><img src="images/4.png" alt="Slide # 4" />
+											</a>
+										</div>
+										<div class="fp-content-wrap">
+											<div class="fp-content-fon"></div>
+											<div class="fp-content">
+												<h3 class="fp-title">
+													<a href="#Similarity">Slide # 4</a>
+												</h3>
+												<p>Fortunately by employing exploratory methods, such as clustering analysis and multidimensional scaling to study our data's structure...
+													<b><a class="fp-more" href="#Similarity">Read More</a></b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="fp-slides-items">
+										<div class="fp-thumbnail">
+											<a href="#Ranking"><img src="images/5.png" alt="Slide # 5" /></a>
+										</div>
+										<div class="fp-content-wrap">
+											<div class="fp-content-fon"></div>
+											<div class="fp-content">
+												<h3 class="fp-title"><a href="#Ranking">Slide # 5</a></h3>
+												<p>Now that we've laid out some context, we have a fairer representation for our data in mind and can begin describing details specific to Macy's like: ranking, popularity, and ...
+													<b><a class="fp-more" href="#Ranking">Read More</a></b>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fp-prev-next-wrap">
+									<div class="fp-prev-next">
+										<a href="" class="fp-next"></a>
+										<a href="" class="fp-prev"></a>
+									</div>
+								</div>
+								<div class="fp-nav">
+									<span class="fp-pager">&nbsp;</span>
+								</div>  
+								<div class='bground'></div>
+							</div>
+
+						</div>			
+					</div>
+
+
+				</div>
+			</div>
+
+			<div id='content-top' class='container'></div>
+			<div id='content'>
+				<div class='container clearfix'>
+
+
+					<!-- ddd-->		 
+					<div id="main_content">
+						<div class='articles'>
+
+							<div class='one-post'>
+								<div class='post-body'>
+								</div>
+							</div>
+
+							<div class='one-post'>
+								<div class='post-body'>
+
+									<a id="Intro" name="Intro"></a>
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+											<b>
+												<a class='post_ttl' style='font-family: "oswald",sans'>Exploring Data for Wedding Keyword Searches</a>
+											</b>
+										</h2>
+									</div>
+
+									<div style='text-align: center;'>
+										<img src="./img/macys.jpg" />
+									</div>
+
+									<p>Summer's a season for love! That's why we, the Data Science Student Society at UCSD, created this unique data project especially for <b><a href='http://macys.com/'>Macy's.com</a></b>. Our exploratory analysis provides a quick overview and some insights on how Macy's and other similar domains rank for wedding keywords searches online.</p>
+
+									<p>This is immensely signficant to Macy's $27 billion retail business, as of 2015, and in particular the <b><a href='http://www.forrester.com/US+Online+Retail+Sales+To+Reach+370+Billion+By+2017/-/E-PRE4764'>10% or bigger slice</a></b> that online web sales occupy in the industry overall. Macy's, however, is slightly more successful and has a <b><a href="https://www.internetretailer.com/2015/01/08/macys-steps-its-online-investments">larger account</a></b> owing to its exclusive vendors, retail strategy, customer satisfaction, and success in leveraging <i>technology</i> to the optimal advantage.
+
+									<p>In respect, our preliminary exploration (EDA) of Macy's search data visualizes and sheds light on <b><a href='http://en.wikipedia.org/wiki/Exploratory_data_analysis#EDA_development'>outliers, trends, and patterns</a></b> for a specific subindustry: weddings. EDA is a starting point and can open doors to future investigations and research down the line, say for instance a machine learning/predictive task to model the ranking of a Macy's.com webpage. Considering we have interesting features.</p>
+
+									<p>Excited yet? Let's take a look at our data!</p>
+
+									<br />
+
+									<a id="Explore" name="Explore"></a>
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a class='post_ttl' style='font-family: "oswald",sans'>Our Awesome Dataset</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>A sample dataset was generously collected and provided to us by running through list of 142  wedding-related phrases (but only containing 70ish unique words), likely obtained from Google analytics. The data gathering was completed in no time at all, thanks to Mr. Brian Randy Ta's very clever script. And the entire process is symbolized by the handy diagram shown here.</p>
+
+									<div style='text-align: center;'>
+										<img src="./img/datagathering.png" width=700 height=400 />
+									</div>
+
+								
+									<p>Simply counting, the dataset has:
+										<ul style="margin-top: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">1411 Total records</p></li>
+											<li><p style="margin-left:0%">588 Unique Titles</p></li>
+											<li><p style="margin-left:0%">547 Unique Links</p></li>
+										</ul>
+									</p>
+
+									<p style="margin-top: -23px;">
+										One of the Society's top minds, Dr. Sang Han, has enhanced our basic Jupyter tech and hacked it up to produce a basic view of the data:
+									</p>
+
+									<br />
+
+									<div id="drsanghan" style="margin-left: 5%;"></div>
+									
+									<script type="text/javascript">
+										$("div#drsanghan").load("./drsanghan/wedding_topics.ipynb.html")
+									</script>
+									
+									<p>Some remaining associated trivia about how the data was gathered are:
+										<ul style="margin-top: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">the "Rank" proportions is close to a uniform distribution with 142 records for ranks no. 1-7 and 139 records for ranks no. 8-10 (7×142 + 3×139 = 1411). </p></li>
+											<li><p style="margin-left:0%">1342 (95%) of the top-level domains are commercial (.com or .co) and 17 (1.2%) are edu, org, and miscellaneous</p></li>
+											<li><p style="margin-left:0%">the other 52 (4%) of links are "No Link found" (corresponds to image results), E! Online (news results) and Cambio?</p></li>
+										</ul>
+									</p>
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="KeyWordPhrases" class='post_ttl' style='font-family: "oswald",sans'>Keyword Phrases</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>As mentioned in the data gathering section, there are 142 phrases used to acquire the search results, but they only have 74 unique words, the majority (50) of which only appear once. Each phrase has on average  3-4 words, and the interesting details of their relations appears in this <b><a href='./wordgraph/wordgraph.png'>sphagetti of a diagram</a></b> I affectionately call our "wordgraph." A more concise version appears as an interactive visualization that captures a sense of scale:
+
+										<ul style="margin-top: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">bigger nodes indicate greater keyword apperance  </p></li>
+											<li><p style="margin-left:0%">thicker links indicate more connections</p></li>
+										</ul>
+
+									</p>
+
+									<iframe id="wordgraph" width="930" height="700" style="margin-top: -30px;" scrolling="no" src="./wordgraph/wordgraph.html"></iframe>
+
+
+									<p>"Wedding", "Gift(s)", "Registry", "Ideas" are popular words and act as central hubs. A few leaf nodes that appear on the outer fringes ("360 / finder / items / search / uk /wording") of the wordgraph have been combined. Important word relationships are emphasized and more subtle relationships have now become visible.
+									</p>
+
+									<p>Based on the keyword relations, we believe users typically are poking around and searching for wedding <i>gifts</i>. The wedding industry is a big business and quite complex, but for the average curious wedding invitee, we'd guess that they are looking for gift ideas to purchase. For the wedding hosts, they would be interested in a bridal registry, which Wikipedia describes as "a service provided by a website or retail store to assist engaged couples in the communication of gift preferences to wedding guests." Weddings are very a big deal (and quite a handsome opportunity to make a large sum of profit)!
+									</p>
+
+									<blockquote>
+										<p>A <b><a href='https://en.wikipedia.org/wiki/Bridal_registry'>bridal registry</a></b> is a service provided by a website or retail store to assist engaged couples in the communication of gift preferences to wedding guests.
+										</p>
+									</blockquote>
+
+									<br />
+
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="Descriptions" class='post_ttl' style='font-family: "oswald",sans'>Basic Descriptions</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>A wordcloud for text data is complimentary, and we made <b><a href="./wordclouds">10 of them </a></b>for descriptions among each of the 10 ranks. Wordclouds are used to immediately highlight the most prominent and frequent words, but in this special case it's not as sensational than it usually is - the 10 wordclouds contain more or less the same bigrams and trigrams, many of them matching our keyword phrases.
+									</p>
+
+									<div style='text-align: center;'>
+										<img src="./wordclouds/1_rank_wordcloud.png" width=700 height=700/>
+									</div>
+
+									<a name="vocab"></a>
+
+									<p>Therefore variation of words among ranks should be compared using other techniques. Below we see the vocabulary size of better ranked web pages being smaller. As the rank increases further pass no. 1, the vocabulary size increases by the hundreds. Focus on fewer and more relevant words!
+									</p>
+
+									<div style='text-align: center;'>
+										<img src="./img/vocab.png" />
+									</div>		
+
+									<p><a name="bar"></a>Which words though? An intriguing question that leads to a grouped bar plot comparing the frequency of 15 common words among the 10 ranks. Although 22 words appear on the horizontal axis, they are the top 15 most frequent in their respective rank categories. Green-red are colors used frequently in engineering (software, traffic, civil) to represent good/bad or safety/danger, but they are used in our case to emphasize contrast. Even being ranked no. 10 on search engine results is a good sign in practice.
+									</p>
+
+									<div style='text-align: center;'>
+										<img src="./barplot/comparison_frequent_words.png" />
+									</div>
+
+									<p>Prepositions and pronouns are usually stopwords removed in text analysis, but they happen to be details that matter in search engine rankings, due to their high frequency. Although prepositions are not necessarily bad, it would be safer to conserve their usage. Plurals are usually redundant. Also, "wedding" is our obvious topic, but everyone likes a "unique gift"! For a similar comparison, see the one <b><a href='./barplot/title_frequent_words.png'>describing titles</a></b> (be sure to have "real popular knot &amp; gift items for the bride").
+									</p>
+
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="Descriptions" class='post_ttl' style='font-family: "oswald",sans'>Topics for Title &amp; Description</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>
+										It's true that our prized topic is "wedding", but what kinds of other interesting sub<i>-topics</i> are the search results talking about? We'll use the most recent and hottest topic-modelling technique to approach our investigation: Latent Dirichlet Allocation (LDA).
+									</p>
+									<p>Fancy name and complicated theoretical math proofs aside, LDA can help us explore the structure/categories of our search results. It works by following 2 intuitive premises:
+										<ul style="margin-top: -30px; margin-bottom: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">The text of a search result is a combination of "topics"</p></li>
+											<li><p style="margin-left:0%">Each topic is a combination of words appearing in search result texts</p></li>
+										</ul>
+									</p>
+
+									<p>The number of topics is hand picked by expert humans to open for interpretation. Sang has discovered 10 topics describing the certain types of wedding <i>gift categories</i> while my 7 chosen topics identify and uncover different types of <i>websites</i> and their <i>user shopping experience</i> that they uniquely provide, as listed here
+									</p>
+
+									<p id="ldatable" style="margin-left: 24%"></p>
+									<script type="text/javascript">
+										$("p#ldatable").load("./lda/ldatable.html")
+									</script>
+
+									<iframe src="./lda/results.html" width=400 height=870></iframe>
+
+									<p>In one of our faculty advisor's winning research paper using LDA, his model incorporates Yelp and Amazon <i>clothing</i> data in order to discover different categories of local businesses and <i>clothing types</i>. In general, he aptly advises: "When training data is scarce, the benefit gained from modeling review text is the greatest." The Macy's wedding SEO data is a subset of the entire web search space and is in context quite sparse, so his keen observation naturally extends to our titles and description texts. 
+									</p>
+
+									<p>Now we know what kind of general topics our search results contain!</p>
+									<p>
+										Here are excellent resources on LDA for further review:
+										<ul style="margin-top: -30px; margin-bottom: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">Diane Hu's
+												<b><a href="http://cseweb.ucsd.edu/~dhu/docs/exam09.pdf">tutorial</a></a></b></p></li>
+											<li><p style="margin-left:0%">Professor Julian's winning <b><a href="http://www.yelp.com/html/pdf/YelpDatasetChallengeWinner_HiddenFactors.pdf">paper</a></b>:<i> Hidden Factors and Hidden Topics:
+Understanding Rating Dimensions with Review Text</i></p></li>
+										</ul>
+									</p>
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="Similarity" class='post_ttl' style='font-family: "oswald",sans'>Macy's  and Website Similarity</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>Before analyzing Macy's ranking directly, we should understand it in <i>context</i> and comparison with other similar domains. Otherwise, we may fall into mental traps like thinking, "oh, there are 12 best websites ranked no. 1!"
+									</p>
+
+									<p>But did you know those 12 only appear <i>once</i> (although registryfinder.com, appearing thrice and having a good rank, seems to have potential)? In a dataset with 1411 records and as a statement on search results in practice, appearing once is almost invisible! In fact, 201 out of the 246 unique domains (~80%) in our data appear only <i>5 times</i> or <i>less</i>. 
+									</p>
+
+
+									<p>Fortunately by employing exploratory methods, such as clustering analysis and multidimensional scaling to study our data's structure, we can avoid misrepresentation and focus on <i>visualizing</i> clear, big picture patterns.
+									</p>
+
+									<p>Multidimensional scaling (MDS), shown in the scatterplots below, transforms all our high-dimensional and sparse text description data and helps us see macys.com in a more accurate and simple two-dimensional scale - we can easily tell that macys.com is similar to other big online retail stores like Amazon, Kohl's, and Walmart. Surprisingly, it is also similar to news sites like Buzzfeed and Lifehacker. Lastly, our MDS plots advise that Macy's may consider striking a balance between acting as a big online retail <i>generalist</i> (as also found previously in our LDA visualization) for a variety of products and acting as a <i>specialist</i> like Nordstrom in wedding search (and we will compare their website rankings using our MDS findings here later on in a bubble plot).
+									</p>
+
+									<div style='text-align: center;'>
+										<img src="./sim/mds.png" />
+									</div>
+
+									<p>Again, emphasizing what we said before about carefully visualizing in an a clear, illuminating perspective, we also use hierarchical clustering analysis to produce the figure below, known as a "dendrogram," to double check, compare with MDS, and give us a sense as to where Macy's stands.
+									</p>
+
+									<p>The difference between the dendrogram and MDS is that the dendrogram is hierarchical, whereas MDS is flat. This is shown in how MDS treats each data point equally like a particle that repels and attracts every other particle until equilibrium/stability is reached and the similarity distances become fixed. However, the dendrogram compares similarity distances incrementally, step-by-step, one pair at a time like Noah and the Ark. As a result, our dendrogram shows that Macy's is the middle of "personalcreations.com" and two other significant subgroups.
+									</p>
+
+									<div style='text-align: center;'>
+										<img src="./sim/dendrogram.png" />
+									</div>
+
+									<p>Despite their difference, the dendrogram and MDS both attempt to visualize similarity and demonstrate that there seems to be ~4-5 clusters of websites. The type of clusters still remain open to interpretation, say big retailers, specialist websites, personal/handcrafted gifts, newest wedding fashions, etc. Perhaps another similarity definition may be used instead in the future, such as Jaccard or Tanimoto (clipping word appearances to 0-1). Our dendrogram and MDS currently use the Euclidian similarity, on which a neat reference and intuitive explanation is provided by Sang's <b><a href='http://sanghan.me/blog/2015/07/point_class/'>blogpost</a></b> on points and distances.
+									</p>
+									
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="Ranking" class='post_ttl' style='font-family: "oswald",sans'>Macy's Ranking Comparison</a>
+												</b>
+										</h2>
+									</div>
+
+
+									<p>Now that we've laid out some context, we have a fairer representation for our data in mind and can begin describing details specific to Macy's like: ranking, popularity, and some quick protips on how macys.com can become the go-to website for people searching up weddings purchases.
+									</p>
+
+									<p>Great news! Macy's is in the <b><a href='./rank/top.png'>top 30</a></b> for appearance in our wedding search data. High quantity is a good sign indeed, but do we have more details, so that macys.com can learn to do even better?
+									</p>
+
+									<p>Yes, our 11 macys.com results show that its rank distribution ranges between 4 and the minimum value of 10. In addition, the "<b><a href='http://macys.com/registry/wedding/registrysearch'>registrysearch</a></b>" page brings higher quality ranked results than the "<b><a href='https://www.macys.com/wedding-registry'>wedding-registry</a></b>" page, but it only appears two times whereas the wedding-registry appears 9.
+									</p>
+
+									<p><img style="margin-left: 16%" src='./rank/box.png' /></p>
+									
+									<p>Looking at the 11 records for macys.com out of the total 1411 and combining what we've seen in the previous discussion, we'll offer some reasonable <i>Microstrategy</i>:
+										<ul style="margin-top: -30px; margin-left:12%;">
+											<li><p style="margin-left:0%">the keyword phrase "wedding registry" brings up macys.com's best ranked result</p></li>
+											<li><p style="margin-left:0%">a plural keyword phrase, as we've seen before in our <b><a href="#bar">green-red grouped barplots</a></b> on search result descriptions, would also be likely to bring up smaller macys.com's ranks, no. 9-10</p></li>
+											<li><p style="margin-left:0%">so use a singular keyword, preferably "gift" over "registry" if there can only be one of them</p></li>
+											<li><p style="margin-left:0%">and "gift" over "registry" if there can only be one choice (<b><a href="#vocab">vocabulary size</a></b> for ranks matter!)</p></li>
+											<li><p style="margin-left:0%">but remember to include "wedding" and be sure to place it before "gift"</p></li>
+											<li><p style="margin-left:0%">search results are badly ranked for keyword phrases containing plurals, so match user keywords with Macy's texts to both use less plurals, or develop more Macy's-related website subpages that have text containing plurals to possibly increase the overall appearance count and a larger web presence</p></li>
+										</ul>
+									</p>
+
+									<p>Finally, looking at the total 1411 search result records in a greater perspective, we also provide general a <i>Macrostrategy</i> to finish things off, using correlational analysis which enable us to draw meaningful pictures and understandable conclusions.
+										<ul style="margin-top: -30px; margin-left:12%; margin-bottom: -30px">
+											<li><p style="margin-left:0%">remembering what we mentioned before about ~80-81% of our 246 domains appearing 5 times or less, when we take into consideration that 80% subset and compare "appearance" along with other reasonable variables such as "# words in the title" or "# words in the description", the results are a bit dull like uncarbonated soda - correlation values between our variables are quite low, and the regression lines are flat like pancakes.</p></li>
+											<li><p style="margin-left:0%">using our best judgment, we instead focus on the ~18-20% of frequent domains which appear more than 5 times as being a better representation of our search data</p></li>
+											<li><p style="margin-left:0%">in doing so, we admit that the new subset will have improved "rank" variable values (a change of mean rank from 6 to 5) while "# words in the title/description" variables remain almost unchanged at averages 8 and 25 words respectively</p></li>
+											<li><p style="margin-left:0%">a benefit that this new subset provides is seeing a clearer pattern that emerges: in the bubble plot below we simultaneously encode 4 variables
+
+												<ol>
+													<li>Popularity (horizontal axis)</li>
+													<li>Average/mean rank value for a site (vertical axis)</li>
+													<li>Appearance count (bubble size)</li>
+													<li>Similarity to Macy's text description (color)</li>
+												</ol>
+											</p></li>
+										</ul>
+									</p>
+
+									<iframe src="./bubble/bubble.html" scrolling="no" style="overflow: hidden;" height=500></iframe>
+
+									<p>
+										<ul style="margin-top: -30px; margin-left:12%; margin-bottom: -30px">
+											<li><p style="margin-left:0%">immediately one can spot that popular and higher ranked sites tend to appear more frequently (i.e. etsy.com, realsimple.com, theknot.com), although there are exceptions like nordstrom.com which is twice as popular (17th) as macys.com (35th) but not appearing frequently</p></li>
+											<li><p style="margin-left:0%">also those sites are either not at all or only sorta similar to Macy's text description results given their color-coded values from our MDS analysis </p></li>
+											<li><p style="margin-left:0%">the advantageous aspect of the bubble plot is that we can compare macys.com to sorta similar sites like davidsbridal.com or theplunge.com as an indicator of how macys should learn to improve, and hopefully end up being the top 5 in the near future</p></li>
+											<li><p style="margin-left:0%">the story that's being told here is, to be more "popular" (defined as an ordering of a website on decreasing mean rank values) focus on "appearance" or <i>quantity</i> (the number of times it appears in our data) first, and the <i>quality</i> of your site's mean rank value may also benefit</p></li>
+											<li><p style="margin-left:0%">the previous point above is evidenced by the strong correlational value of 43 out of 100% between appearance and popularity, and the remaining correlations we found are based on the pairs plot:</p></li>
+										</ul>
+									</p>
+
+									<img src='./rank/pair.png' />
+
+									<p>
+										<ul style="margin-top: -30px; margin-left:12%; margin-bottom: -30px">
+											<li><p style="margin-left:0%">in summary, our pairs plot advises us to be cautious in not using too many words in crafting our search result titles (8-9 is average but more than that can be risky) in order to optimize appearance count and therefore popularity</p></li>
+											<li><p style="margin-left:0%">more words in our description may improve our search results' appearance count by only a small bit, but with a negative 24% correlation, it may also heavily lower the mean rank value</p></li>
+											<li><p style="margin-left:0%">relevancy and parsimony deliver more frequent and better ranked search results, so use them wisely and exercise the best judgment</p></li>
+										</ul>
+									</p>
+
+									<p>And thus concludes our preliminary exploratory analysis for the Macy's wedding keyword search dataset.</p>
+
+									<p> We hope we've helped you feel a little more enlightened on the wedding biz as well as whet your appetite for SEO!</p>
+
+									<br />
+
+									<div id="post-57" class="post-57 post type-post status-publish format-standard hentry category-uncategorized tag-blockquote tag-example post-caption">
+										<h2 style='text-align: center;'>
+												<b>
+													<a name="End" class='post_ttl' style='font-family: "oswald",sans'>Will You Be Our Partner?</a>
+												</b>
+										</h2>
+									</div>
+
+									<p>We'd love to be engaged with your <b>bigger</b> datasets and make even <b>better</b> machine learning predictions. And use additional, interesting features or techniques like word distance, document placement, PageRank, and deep learning to show off our awesome data-hacking skills and data-scientific prowess, so
+									</p>
+
+									<p>
+									<img style='text-align: center;' src='./img/beach.jpg' alt='http://www.arlenecatherine.com/data/photos/1215_1pasadenaweddingphotographer003.jpg' title='Beach Wedding: La Jolla Cove' />
+									</p>
+
+									<br />
+
+									<style>
+									#ourquote {
+										max-width:390px;
+									    text-align: center;
+									    padding-left: 33.3333%;
+									    margin:0 auto;
+									    width:auto;
+									    display:table
+									}
+									</style>
+									<blockquote id='ourquote'><p>Please, let us be your <b>perfect</b> gift!</p><small>Data Science Student Society</small></blockquote>
+									</div>
+								</div>
+						</div>
+
+					</div>
+
+					<div class='one-post' style="margin-top: -5%">
+							<div class='post-body'>
+								<span></span>
+
+								<style>
+										.col-sm-4 {
+											width: 33.3333%;
+											position: relative;
+										    min-height: 1px;
+										    padding-right: 15px;
+										    padding-left: 15px;
+										    float: left;
+										    box-sizing: border-box;
+										}
+
+										.img-circle {
+										    border-radius: 50%;
+										}
+
+										.list-inline {
+										    padding-left: 0px;
+										    margin-left: -5px;
+										    list-style: outside none none;
+										}
+
+										.list-inline > li {
+										    display: inline-block;
+										    padding-right: 5px;
+										    padding-left: 5px;
+										}
+
+										p.text-muted {
+											text-align: center;
+										}
+
+										div#Team * ul {
+											padding: 0px;
+										}
+
+										div#Team * h4 {
+											font-size: 16px;
+										}
+									</style>
+
+									<!-- http://fontawesome.io/icons/ -->
+									<div id="Team"><a id="Team" name="#Team"></a>
+						                <div class="col-sm-4">
+						                    <div class="team-member">
+						                        <img src="img/team/kh.jpg" class="img-responsive img-circle" alt="">
+						                        <h4>Kevin Hung</h4>
+						                        <p class="text-muted">The Data Evangelist</p>
+						                        <ul class="list-inline social-buttons">
+						                            <li><a href="mailto:kevhung11@gmail.com"><i class="fa fa-envelope"></i></a>
+						                            </li>
+						                            <li><a href="http://www.linkedin.com/in/kevin11h"><i class="fa fa-linkedin"></i></a>
+						                            </li>
+						                            <li><a href="http://github.com/kevin11h"><i class="fa fa-github-alt"></i></a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                </div>
+						                <div class="col-sm-4">
+						                    <div class="team-member">
+						                        <img src="img/team/bt.jpg" class="img-responsive img-circle" alt="">
+						                        <h4>Brian Randy Ta</h4>
+						                        <p class="text-muted">SEO Prodigy</p>
+						                        <ul class="list-inline social-buttons">
+						                            <li><a href="mailto:brian.ta626@gmail.com"><i class="fa fa-envelope"></i></a>
+						                            </li>
+						                            <li><a href="http://www.linkedin.com/in/brianta626"><i class="fa fa-linkedin"></i></a>
+						                            </li>
+						                            <li><a href="http://twitter.com/shittyseotips"><i class="fa fa-twitter"></i></a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                </div>
+						                <div class="col-sm-4">
+						                    <div class="team-member">
+						                        <img src="img/team/sh.jpg" class="img-responsive img-circle" alt="">
+						                        <h4>Sang Han</h4>
+						                        <p class="text-muted">Big Data Alchemist</p>
+						                        <ul class="list-inline social-buttons">
+						                            <li><a href="mailto:jjangsangy@gmail.com"><i class="fa fa-envelope"></i></a>
+						                            </li>
+						                            <li><a href="http://www.linkedin.com/in/jjangsangy"><i class="fa fa-linkedin"></i></a>
+						                            </li>
+						                            <li><a href="http://sanghan.me/"><i class="fa fa-send"></i></a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                </div>
+						            </div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+
+							<div id='smthemes_share'>
+
+							</div>
+							<div id='content-bottom' class='container'></div>
+							<div id='footer'>
+
+
+								<div class='footer_txt'>
+									<div class='container'>
+										<div class='top_text'>
+											Copyright &copy; 2015  <a href="http://smthemes.com/demowp?preview=1&amp;template=wedding&amp;stylesheet=wedding">SMThemes Demo</a> - High quality free WordPress Themes				</div>
+										
+
+											<div class='smthemes'>Designed by <a href='http://www.hcginjectionsweb.com' target='_blank'>http://www.hcginjectionsweb.com</a>, thanks to: <a href='http://www.r43dscartex.com/products/R4-3DS-RTS.html' target='_blank'>r4 3ds rts</a>, <a href='http://www.coquesamsungx.com/categories/Coques-Pour-Samsung/Coque-Galaxy-S4-i9500/' target='_blank'>coque galaxy s4</a> and <a href='http://www.coquesite.com' target='_blank'>coques iphone</a></div>
+									</div>
+									<br />
+									<div>
+										Proudly Pending Purchase by Kevin
+									</div>
+									<br />
+									<div>
+										Dedicated to Dad's Birthday and my Amazing Mentors
+									</div>
+								</div>
+							</div> </div>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/agency.js"></script>
+
+						</body>
+								</html>

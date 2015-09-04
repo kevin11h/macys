@@ -1,0 +1,23 @@
+.node {
+  opacity: 0.5;
+}
+
+.node:hover {
+  opacity: 1;
+}
+
+circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.3;
+}
+
+text {
+  font: 9px Helvetica;// sans-serif;
+  pointer-events: none;
+}
