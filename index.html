@@ -30,12 +30,9 @@
 		    },
 		    Windows: function() {
 		        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-		    },
-		    Chrome: function() {
-		    	return navigator.userAgent.match(/Chrome/i)
-		    },
+		    }
 		    any: function() {
-		        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows() || isMobile.Chrome());
+		        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		    }
 		};
 
