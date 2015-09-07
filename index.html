@@ -323,7 +323,7 @@
 
 									<p>Summer's a season for love! That's why we, the Data Science Student Society at UCSD, created this unique data project especially for <b><a href='http://macys.com/'>Macy's.com</a></b>. Our exploratory analysis provides a quick overview and some insights on how Macy's and other similar domains rank for wedding keywords searches online.</p>
 
-									<p>This is immensely signficant to Macy's $27 billion retail business, as of 2015, and in particular the <b><a href='http://www.forrester.com/US+Online+Retail+Sales+To+Reach+370+Billion+By+2017/-/E-PRE4764'>10% or bigger slice</a></b> that online web sales occupy in the industry overall. Macy's, however, is slightly more successful and has a <b><a href="https://www.internetretailer.com/2015/01/08/macys-steps-its-online-investments">larger account</a></b> owing to its exclusive vendors, retail strategy, customer satisfaction, and success in leveraging <i>technology</i> to the optimal advantage.
+									<p>This is immensely signficant to Macy's $27 billion retail business, as of 2015, and in particular the <b><a href='http://www.forrester.com/US+Online+Retail+Sales+To+Reach+370+Billion+By+2017/-/E-PRE4764'>10% and growing slice</a></b> that online web sales occupy in the industry overall. Macy's, however, is slightly more successful and has a <b><a href="https://www.internetretailer.com/2015/01/08/macys-steps-its-online-investments">larger account</a></b> owing to its exclusive vendors, retail strategy, customer satisfaction, and success in leveraging <i>technology</i> to the optimal advantage.
 
 									<p>In respect, our preliminary exploration (EDA) of Macy's search data visualizes and sheds light on <b><a href='http://en.wikipedia.org/wiki/Exploratory_data_analysis#EDA_development'>outliers, trends, and patterns</a></b> for a specific subindustry: weddings. EDA is a starting point and can open doors to future investigations and research down the line, say for instance a machine learning/predictive task to model the ranking of a Macy's.com webpage. Considering we have interesting features.</p>
 
@@ -387,7 +387,7 @@
 
 										<ul style="margin-top: -30px; margin-left:12%;">
 											<li><p style="margin-left:0%">bigger nodes indicate greater keyword apperance  </p></li>
-											<li><p style="margin-left:0%">thicker links indicate more connections</p></li>
+											<li><p style="margin-left:0%">denser links indicate more connections</p></li>
 										</ul>
 
 									</p>
@@ -521,7 +521,7 @@ Understanding Rating Dimensions with Review Text</i></p></li>
 										<img src="./sim/dendrogram.png" />
 									</div>
 
-									<p>Despite their difference, the dendrogram and MDS both attempt to visualize similarity and demonstrate that there seems to be ~4-5 clusters of websites. The type of clusters still remain open to interpretation, say big retailers, specialist websites, personal/handcrafted gifts, newest wedding fashions, etc. Perhaps another similarity definition may be used instead in the future, such as Jaccard or Tanimoto (clipping word appearances to 0-1). Our dendrogram and MDS currently use the Euclidian similarity, on which a neat reference and intuitive explanation is provided by Sang's <b><a href='http://sanghan.me/blog/2015/07/point_class/'>blogpost</a></b> on points and distances.
+									<p>Despite their difference, the dendrogram and MDS both attempt to visualize similarity and demonstrate that there seems to be ~4-5 clusters of websites. The type of clusters still remain open to interpretation, say big retailers, specialist websites, personal/handcrafted gifts, newest wedding fashions, etc. Perhaps another similarity definition may be used instead in the future, such as Jaccard/Tanimoto (clipping word appearances to 0-1) or cosine similarity (heard it's nice to use for sparse data like our text). The dendrogram and MDS currently use Euclidian similarity, on which a neat reference and intuitive explanation is provided by Sang's <b><a href='http://sanghan.me/blog/2015/07/point_class/'>blogpost</a></b> on points and distances.
 									</p>
 									
 
@@ -549,7 +549,7 @@ Understanding Rating Dimensions with Review Text</i></p></li>
 										<ul style="margin-top: -30px; margin-left:12%;">
 											<li><p style="margin-left:0%">the keyword phrase "wedding registry" brings up macys.com's best ranked result</p></li>
 											<li><p style="margin-left:0%">a plural keyword phrase, as we've seen before in our <b><a href="#bar">green-red grouped barplots</a></b> on search result descriptions, would also be likely to bring up smaller macys.com's ranks, no. 9-10</p></li>
-											<li><p style="margin-left:0%">so use a singular keyword, preferably "gift" over "registry" if there can only be one of them</p></li>
+											<li><p style="margin-left:0%">so use a singular keyword, like "gift" or "registry"</p></li>
 											<li><p style="margin-left:0%">and "gift" over "registry" if there can only be one choice (<b><a href="#vocab">vocabulary size</a></b> for ranks matter!)</p></li>
 											<li><p style="margin-left:0%">but remember to include "wedding" and be sure to place it before "gift"</p></li>
 											<li><p style="margin-left:0%">search results are badly ranked for keyword phrases containing plurals, so match user keywords with Macy's texts to both use less plurals, or develop more Macy's-related website subpages that have text containing plurals to possibly increase the overall appearance count and a larger web presence</p></li>
@@ -591,7 +591,7 @@ Understanding Rating Dimensions with Review Text</i></p></li>
 										<ul style="margin-top: -30px; margin-left:12%; margin-bottom: -30px">
 											<li><p style="margin-left:0%">in summary, our pairs plot advises us to be cautious in not using too many words in crafting our search result titles (8-9 is average but more than that can be risky) in order to optimize appearance count and therefore popularity</p></li>
 											<li><p style="margin-left:0%">more words in our description may improve our search results' appearance count by only a small bit, but with a negative 24% correlation, it may also heavily lower the mean rank value</p></li>
-											<li><p style="margin-left:0%">relevancy and parsimony deliver more frequent and better ranked search results, so use them wisely and exercise the best judgment</p></li>
+											<li><p style="margin-left:0%">relevancy and parsimony deliver more frequent and better ranked search results, so use them wisely and judiciously</p></li>
 										</ul>
 									</p>
 
